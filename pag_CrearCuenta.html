@@ -1,19 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Cuenta</title>
 </head>
 <body>
+    <header>
     <h1>Crear Cuenta</h1>
     <h4>Volver al <a href="pag_inicio.html">inicio</a></h4>
-    <h3>Ingresa tus datos</h3>
+    </header>
 
-    <br>
-    <br>
-    <hr>
-    <hr>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend><h4>Formulario de Registro</h4></legend>
+
+                <label for="usuario">Usuario: </label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu nombre" required>
+                <br><br>
+                <label for="correo">Correo: </label>
+                <input type="email" id="correo" name="correo" placeholder="correo@gmail.com" required>
+                <br><br>
+                <label for="contraseña">Contraseña: </label>
+                <input type="password" id="contraseña" name="clave" minlength="8" placeholder="********" min="8" required>
+                <br><br>
+                <label for="nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="nacimiento" name="nacimiento" required>
+                <br><br>
+                <label>Género</label>
+                <input type="radio" id="mascu" name="genero" value="M">
+                <label for="mascu">Masculino</label>
+                <input type="radio" id="feme" name="genero" value="F">
+                <label for="feme">Femenino</label>
+                <br><br>
+
+                <button type="submit">Registrarse</button>
+                <button type="reset">Reiniciar Formulario</button>
+
+
+            </fieldset>
+        </form>
+    </main>
 
     <h4>¿Ya tienes cuenta? <a href="pag_IniciarSesion.html">Iniciar Sesión</a></h4>
 

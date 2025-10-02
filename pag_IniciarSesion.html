@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesión</title>
 </head>
 <body>
+    <header>
     <h1>Inicia Sesión</h1>
     <h4>Volver al <a href="pag_inicio.html">inicio</a></h4>
-    <h3>Ingresa tu nombre de usuario</h3>
+    </header>
 
-    <br>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend><h4>Formulario de Inicio de Sesión</h4></legend>
 
-    <h3>Ingresa tu contraseña</h3>
+                <label for="correo">Correo: </label>
+                <input type="email" id="correo" name="correo" placeholder="correo@gmail.com" required>
+                <br><br>
+                <label for="contraseña">Contraseña: </label>
+                <input type="password" id="contraseña" name="clave" minlength="8" placeholder="********" min="8" required>
+                <br><br>
+                <button type="submit">Iniciar Sesión</button>
+                <button type="reset">Reiniciar Formulario</button>
 
-    <br>
-    <br>
-    <hr>
-    <hr>
+            </fieldset>
+        </form>
+    </main>
 
     <h4>¿Aún no tienes cuenta? <a href="pag_CrearCuenta.html">Crear Cuenta</a></h4>
 
     <br>
     <hr>
     <hr>
+    </main>
 
-    <div id="contacto">
+    <footer id="contacto">
     <h4>Agenda+ © 2025 - Proyecto web personal</h4>
     <h4>Mauro Daniel Baldarrago Flores</h4>
     <h4><a href="mbaldarrago@unsa.edu.pe">mbaldarrago@unsa.edu.pe</a></h4>
-    </div>
+    </footer>
 
 </body>
 </html>
