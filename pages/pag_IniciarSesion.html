@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Inicio de Sesión - Agenda+</title>
+</head>
+<body>
+
+    <header class="extraCentrado">
+        <h1>Inicia Sesión</h1>
+        <h4>Volver al <a href="inicio.html" class="link-resaltado">inicio</a></h4>
+    </header>
+
+    <main>
+        <form id="loginForm">
+            <fieldset>
+                <legend><h4>Formulario de Inicio de Sesión</h4></legend>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" required>
+
+                <label for="clave">Contraseña:</label>
+                <input type="password" id="clave" minlength="8" required>
+
+                <button type="submit">Iniciar Sesión</button>
+                <button type="reset">Reiniciar</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <div class="extraCentrado">
+        <h4>¿Aún no tienes cuenta? <a href="pag_CrearCuenta.html" class="link-resaltado">Crear Cuenta</a></h4>
+    </div>
+
+    <footer id="contacto">
+        <div class="footer-container">
+            <p class="footer-main">
+                Agenda+ © 2025 · Proyecto web personal
+            </p>
+            <p>
+                Mauro Daniel Baldarrago Flores
+            </p>
+            <p>
+                <a href="mailto:mbaldarrago@unsa.edu.pe">
+                    mbaldarrago@unsa.edu.pe
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

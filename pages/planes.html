@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Planes · Agenda+</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="inicio.html">
+                    <img src="../assets/images/Logo.jpg" alt="Agenda+">
+                </a>
+            </div>
+
+            <nav class="nav">
+                <a href="inicio.html">Inicio</a>
+                <a href="notas.html">Notas</a>
+                <a href="planes.html" class="active">Planes</a>
+                <a href="AcercaDe.html">Acerca de</a>
+
+                <a href="pag_IniciarSesion.html" class="btn-outline auth-no">Iniciar sesión</a>
+                <a href="pag_CrearCuenta.html" class="btn-solid auth-no">Comience gratis</a>
+
+                <div class="user-menu auth-yes">
+                    <span class="user-name" id="userName"></span>
+                    <div class="user-dropdown">
+                        <p id="userPlan"></p>
+                        <button id="btnLogout">Cerrar sesión</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="planes-container">
+        <section class="planes-intro">
+            <h1>Planes de Agenda+</h1>
+            <p>
+                Elige el plan que mejor se adapte a tu forma de organizarte.
+                Puedes empezar gratis y mejorar tu experiencia cuando lo desees.
+            </p>
+        </section>
+
+        <section class="planes-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Características</th>
+                        <th>Plan Normal</th>
+                        <th>Plan Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Notas de texto</td>
+                        <td>Ilimitadas</td>
+                        <td>Ilimitadas</td>
+                    </tr>
+                    <tr>
+                        <td>Notas de tareas</td>
+                        <td>Ilimitadas</td>
+                        <td>Ilimitadas</td>
+                    </tr>
+                    <tr>
+                        <td>Notas con recordatorio</td>
+                        <td>Hasta 5</td>
+                        <td>Ilimitadas</td>
+                    </tr>
+                    <tr>
+                        <td>Colores personalizados</td>
+                        <td>No</td>
+                        <td>Sí</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="planes-action">
+            <button id="btnPremium" class="boton-interactivo primary">
+                Activar Plan Premium
+            </button>
+            <p id="planMsg" class="plan-msg"></p>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-container">
+            <p class="footer-main">
+                Agenda+ © 2025 · Proyecto web personal
+            </p>
+            <p>Mauro Daniel Baldarrago Flores</p>
+            <p>
+                <a href="mailto:mbaldarrago@unsa.edu.pe">
+                    mbaldarrago@unsa.edu.pe
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

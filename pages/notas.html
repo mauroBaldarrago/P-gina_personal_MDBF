@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Mis Notas - Agenda+</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="inicio.html">
+                    <img src="../assets/images/Logo.jpg" alt="Agenda+">
+                </a>
+            </div>
+
+            <nav class="nav">
+                <a href="inicio.html">Inicio</a>
+                <a href="notas.html">Notas</a>
+                <a href="planes.html">Planes</a>
+                <a href="AcercaDe.html">Acerca de</a>
+
+                <a href="pag_IniciarSesion.html" class="btn-outline auth-no">Iniciar sesión</a>
+                <a href="pag_CrearCuenta.html" class="btn-solid auth-no">Comience gratis</a>
+
+                <div class="user-menu auth-yes">
+                    <span class="user-name" id="userName"></span>
+                    <div class="user-dropdown">
+                        <p id="userPlan"></p>
+                        <button id="btnLogout">Cerrar sesión</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <header class="extraCentrado">
+        <h1>Mis Notas</h1>
+        <p>Usuario: <strong id="usuario"></strong></p>
+    </header>
+
+    <main>
+        <form id="notaForm">
+            <fieldset>
+                <legend><h4>Nueva Nota</h4></legend>
+
+                <textarea id="notaTexto" rows="4" placeholder="Escribe tu nota..." required></textarea>
+
+                <label for="tipoNota">Tipo de nota</label>
+                <select id="tipoNota" required>
+                    <option value="texto">📝 Nota de texto</option>
+                    <option value="tarea">✅ Tarea</option>
+                    <option value="recordatorio">⏰ Recordatorio</option>
+                </select>
+                
+                <label>Color de la nota:</label>
+                <div id="colorSelector" class="color-selector">
+                    <span class="color-circle" data-color="black" style="background:black;"></span>
+                    <span class="color-circle" data-color="red" style="background:red;"></span>
+                    <span class="color-circle" data-color="blue" style="background:blue;"></span>
+                    <span class="color-circle" data-color="green" style="background:green;"></span>
+                    <span class="color-circle" data-color="orange" style="background:orange;"></span>
+                    <span class="color-circle" data-color="purple" style="background:purple;"></span>
+                </div>
+
+                <div id="recordatorioFechaContainer" style="display:none; margin-top:8px;">
+                    <label for="fechaRecordatorio">Día del recordatorio</label>
+                    <input type="date" id="fechaRecordatorio">
+                </div>
+
+                <button type="submit">Guardar Nota</button>
+            </fieldset>
+        </form>
+
+        <section>
+            <h3>Notas guardadas</h3>
+            <ul id="listaNotas"></ul>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>Agenda+ © 2025 · Proyecto web personal</p>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

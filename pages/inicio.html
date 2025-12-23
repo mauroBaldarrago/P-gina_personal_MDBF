@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Agenda+</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="inicio.html">
+                    <img src="../assets/images/Logo.jpg" alt="Agenda+">
+                </a>
+            </div>
+
+            <nav class="nav">
+                <a href="inicio.html">Inicio</a>
+                <a href="notas.html">Notas</a>
+                <a href="planes.html" class="active">Planes</a>
+                <a href="AcercaDe.html">Acerca de</a>
+
+                <a href="pag_IniciarSesion.html" class="btn-outline auth-no">Iniciar sesión</a>
+                <a href="pag_CrearCuenta.html" class="btn-solid auth-no">Comience gratis</a>
+
+                <div class="user-menu auth-yes">
+                    <span class="user-name" id="userName"></span>
+                    <div class="user-dropdown">
+                        <p id="userPlan"></p>
+                        <button id="btnLogout">Cerrar sesión</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-center">
+                <h1>Tu segundo cerebro</h1>
+
+                <p class="subtitle">
+                    Organiza notas, tareas y proyectos en un solo lugar.
+                    Agenda+ te ayuda a pensar mejor y perder menos tiempo.
+                </p>
+
+                <div class="cta-container">
+                    <a href="pag_CrearCuenta.html" class="boton-interactivo primary auth-link">
+                        Empieza gratis
+                    </a>
+
+                    <p class="login-link">
+                        ¿Ya tienes una cuenta?
+                        <a href="pag_IniciarSesion.html" class="auth-link">Iniciar sesión</a>
+                    </p>
+                </div>
+
+                <div class="hero-image">
+                    <img src="../assets/images/banner.png" alt="Vista previa de Agenda+">
+                </div>
+            </div>
+        </section>
+
+        <section id="funcionalidades">
+            <h1>Aprovecha al máximo tus ideas y tu tiempo</h1>
+
+            <div class="grid-features">
+                <article class="feature-card">
+                    <h3>Calendario inteligente</h3>
+                    <p>Visualiza tu semana y planifica sin estrés.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Gestión de tareas</h3>
+                    <p>Prioriza, marca avances y cumple objetivos.</p>
+                </article>
+
+                <article class="feature-card">
+                    <h3>Notas rápidas</h3>
+                    <p>Captura ideas al instante, donde estés.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="beneficios">
+            <div class="benefits-content">
+                <div class="text-block">
+                    <h2>Diseñada para el mundo real</h2>
+                    <ul>
+                        <li><strong>Minimalista:</strong> sin distracciones innecesarias.</li>
+                        <li><strong>Multidispositivo:</strong> accede desde cualquier lugar.</li>
+                        <li><strong>Potente y gratuita:</strong> ideal para estudiantes y profesionales.</li>
+                    </ul>
+                </div>
+
+                <figure class="benefits-image">
+                    <img src="https://www.apapel.es/blog/wp-content/uploads/2021/03/agenda-papel-apapel.jpg" alt="Organización personal">
+                </figure>
+            </div>
+        </section>
+
+        <section id="quote-section">
+            <blockquote>
+                <p>“El secreto del éxito está en la constancia de propósito.”</p>
+                <cite>— Benjamin Disraeli</cite>
+            </blockquote>
+        </section>
+
+        <section id="final-cta">
+            <h2>Organiza tu vida hoy mismo</h2>
+            <p>Únete a miles de personas que ya usan Agenda+.</p>
+            <a href="pag_CrearCuenta.html" class="boton-interactivo primary auth-link">
+                Crear mi cuenta gratuita
+            </a>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-container">
+            <p class="footer-main">
+                Agenda+ © 2025 · Proyecto web personal
+            </p>
+            <p>
+                Mauro Daniel Baldarrago Flores
+            </p>
+            <p>
+                <a href="mailto:mbaldarrago@unsa.edu.pe">
+                    mbaldarrago@unsa.edu.pe
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>
