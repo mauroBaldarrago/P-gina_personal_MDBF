@@ -28,10 +28,7 @@ Agenda+ utiliza PHP para manejar la comunicación entre el front-end y la base d
   - Iniciar sesión
   - Guardar, actualizar y eliminar notas
   - Activar el plan premium de un usuario
-  - 
-## Documentación
-**URL de la documentación:** https://docs.google.com/document/d/10SgY1Az8c1RicAxPgUstr6CQLBVmXuhQrH-xv9LMvsg/edit?usp=sharing
-
+    
 ### Base de Datos
 Se usa MySQL para almacenar los datos de usuarios y notas. La base de datos local (o remota) contiene al menos dos tablas principales:
 
@@ -51,3 +48,6 @@ Se usa MySQL para almacenar los datos de usuarios y notas. La base de datos loca
    - fechaRecordatorio (DATE, opcional)
    - completada (BOOLEAN)
    - color (VARCHAR) --------- Color de la nota (funcionalidad extra premium)
+  
+## Documentación
+**URL de la documentación:** https://docs.google.com/document/d/10SgY1Az8c1RicAxPgUstr6CQLBVmXuhQrH-xv9LMvsg/edit?usp=sharing
