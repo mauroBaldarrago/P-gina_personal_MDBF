@@ -1,6 +1,6 @@
 # Agenda+ - Proyecto de Gestión de Notas y Recordatorios
 
-**URL del proyecto hospedado:**
+**URL del proyecto hospedado:** https://maurobaldarrago.github.io/P-gina_personal_MDBF/pages/inicio.html
 
 ## Descripción
 Agenda+ es una aplicación web que permite a los usuarios registrar notas, tareas y recordatorios con distintos niveles de personalización. La plataforma distingue entre usuarios con cuenta normal y premium, ofreciendo funcionalidades adicionales para los premium, como colores personalizados y recordatorios ilimitados.
